@@ -5,9 +5,9 @@ name: Run Script
 
 on:
   schedule:
-    # 4pm UTC on the 7th of the month
-    # https://crontab.guru/#0_16_7_*_*
-    - cron: "0 16 7 * *"
+    # 7pm UTC on the 17th of the month
+    # https://crontab.guru/#0_7_17_*_*
+    - cron: "0 7 17 * *"
   workflow_dispatch:
 
 jobs:
@@ -39,6 +39,5 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           K_FRIEND_ID: ${{ secrets.K_FRIEND_ID }}
-          C_FRIEND_ID: ${{ secrets.C_FRIEND_ID }}
-          W_FRIEND_ID: ${{ secrets.W_FRIEND_ID }}
-          J_FRIEND_ID: ${{ secrets.J_FRIEND_ID }}
+          S_FRIEND_ID: ${{ secrets.S_FRIEND_ID }}
+          T_FRIEND_ID: ${{ secrets.T_FRIEND_ID }}
